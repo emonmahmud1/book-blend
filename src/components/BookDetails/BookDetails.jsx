@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import {  useParams } from "react-router-dom";
+import { storeReadData, storeWishList } from "../../utility/storeReadDataLocalStorage";
 
 const BookDetails = () => {
   const { id } = useParams();
@@ -15,7 +16,20 @@ const BookDetails = () => {
       });
   }, [id]);
 
-  const { bookId, bookName, author, image, rating, category, tags,review,totalPages,publisher,yearOfPublishing } = book;
+  const { bookName, author, image, rating, category, tags,review,totalPages,publisher,yearOfPublishing } = book;
+
+  const addReadBookLocalStorage = ()=>{
+
+    storeReadData(book);
+
+
+  };
+  const addWishListLocalStorage = ()=>{
+
+    storeWishList(book);
+
+
+  };
 
   return (
     <div className="card lg:card-side bg-base-100 gap-9">
@@ -87,8 +101,8 @@ const BookDetails = () => {
         </div>
 
         <div className="mt-9 space-x-6">
-            <button className="btn btn-outline px-7 text-lg font-semibold">Read</button>
-            <button className="btn bg-[#50B1C9] text-white font-semibold text-lg px-7">Wishlist</button>
+            <button onClick={addReadBookLocalStorage} className="btn btn-outline px-7 text-lg font-semibold">Read</button>
+            <button onClick={addWishListLocalStorage} className="btn bg-[#50B1C9] text-white font-semibold text-lg px-7">Wishlist</button>
         </div>
       </div>
       
