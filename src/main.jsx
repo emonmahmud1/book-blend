@@ -14,11 +14,13 @@ import ReadBooks from './components/ReadBooks/ReadBooks';
 import WishListBooks from './components/WishLishBooks/WishListBooks';
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
