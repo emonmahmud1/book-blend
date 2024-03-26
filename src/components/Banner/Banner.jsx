@@ -5,7 +5,7 @@ const Banner = () => {
       <div className="lg:gap-28 hero-content flex-col lg:flex-row-reverse justify-between">
         <div className="lg:w-1/2">
           <img
-            src="./public/images/bannerimg.png"
+            src="./images/bannerimg.png"
             className="w-full rounded-lg shadow-2xl"
           />
         </div>

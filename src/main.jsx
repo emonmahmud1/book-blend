@@ -12,6 +12,8 @@ import PagesToRead from './Pages/PagesToRead/PagesToRead';
 import BookDetails from './components/BookDetails/BookDetails';
 import ReadBooks from './components/ReadBooks/ReadBooks';
 import WishListBooks from './components/WishLishBooks/WishListBooks';
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const router = createBrowserRouter([
   {
@@ -55,5 +57,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
    <RouterProvider router={router} />
+   <ToastContainer />
   </React.StrictMode>,
 )

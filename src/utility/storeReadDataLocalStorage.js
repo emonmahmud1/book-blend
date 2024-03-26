@@ -1,11 +1,15 @@
+
+import { toast } from 'react-toastify';
+
 export const storeReadData = (book) => {
   const getData = JSON.parse(localStorage.getItem("readData")) || [];
   const checkData = getData.find((data) => data.bookId == book.bookId);
   if (!checkData) {
     getData.push(book);
     localStorage.setItem("readData", JSON.stringify(getData));
+    toast.success("Successfully Added To Reading list")
   } else {
-    alert("already read this book");
+    toast.error("Already Read this Book");
   }
 };
 
@@ -16,13 +20,19 @@ export const storeWishList = (book) => {
   const alreadyReadBook = readBooks.find((readbook) => readbook == book.bookId); 
 //   console.log(book, readBooks);
 if(alreadyReadBook){
-    alert('already Read this Book you can not add in wishlist');
+    // alert('already Read this Book you can not add in wishlist');
+ toast.warn("already Read this Book you can not add in wishlist")
+
+
 }
  else if (!checkData && !alreadyReadBook) {
     getData.push(book);
     localStorage.setItem("wishList", JSON.stringify(getData));
+    toast.success("Successfully added to Wishlist")
+ 
   } else {
-    alert("already wishlist");
+    toast.info("Already Whitlisted")
+  
   }
 };
 
