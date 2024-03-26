@@ -18,7 +18,7 @@ const NavBar = () => {
         >Home</NavLink>
       </li>
       <li>
-        <NavLink to="/listedboot"
+        <NavLink to="/listedbook"
         className={({ isActive }) =>
         isActive
         ? " border border-[#23BE0A] text-[#23BE0A] px-5 py-3 rounded-lg font-semibold text-lg"
@@ -51,7 +51,7 @@ const NavBar = () => {
         >Home</NavLink>
       </li>
       <li>
-        <NavLink to="/listedboot"
+        <NavLink to="/listedbook"
         className={({ isActive }) =>
         isActive
         ? " border border-[#23BE0A] text-[#23BE0A] px-5 py-3 rounded-lg font-semibold"
