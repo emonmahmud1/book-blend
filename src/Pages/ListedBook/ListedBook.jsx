@@ -22,7 +22,7 @@ const ListedBook = () => {
       <div className="mt-20">
         <div role="tablist" className="tabs tabs-lifted text-xl font-bold">
          
-          <Link to={"readbooks"} onClick={tabReadOnClick} role="tab" className={`tab ${tabReadClick? 'tab-active': 'tab'}`}>
+          <Link to={"/listedbook"} onClick={tabReadOnClick} role="tab" className={`tab ${tabReadClick? 'tab-active': 'tab'}`}>
             Read Books
           </Link>
           <Link to={"wishlist"} onClick={tabWishOnClick} role="tab" className={`tab ${tabWishClick? 'tab-active': 'tab'}`}>

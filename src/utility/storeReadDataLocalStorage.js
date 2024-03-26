@@ -31,7 +31,7 @@ if(alreadyReadBook){
     toast.success("Successfully added to Wishlist")
  
   } else {
-    toast.info("Already Whitlisted")
+    toast.info("Already in wishlist")
   
   }
 };

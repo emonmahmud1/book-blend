@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         element: <ListedBook></ListedBook>,
         children: [
           {
-            path: "readbooks",
+            path: "/listedbook",
             element: <ReadBooks></ReadBooks>
           },
           {

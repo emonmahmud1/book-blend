@@ -14,7 +14,7 @@ const Banner = () => {
             Books to freshen up your bookshelf
           </h1>
           <div className="mt-8">
-            <NavLink to="/listedboot">
+            <NavLink to="/listedbook">
 
           <button className="btn text-white work-sans bg-[#23BE0A] border-none">View The List</button>
             </NavLink>

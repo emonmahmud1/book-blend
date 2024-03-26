@@ -29,13 +29,13 @@ const ReadBook = ({ book }) => {
           <span>By: </span>
           {author}
         </p>
-        <div className="flex gap-8">
-          <div className="flex gap-3 mb-4">
+        <div className="flex flex-col lg:flex-row gap-2 lg:gap-8">
+          <div className="flex flex-col lg:flex-row gap-3 mb-4">
             <p className="font-bold">Tags</p>
             {tags &&
               tags.map((tag, idx) => (
                 <p
-                  className="bg-[#23be0a0d] rounded-lg p-2 text-[#23BE0A] work-sans text-sm"
+                  className="bg-[#23be0a0d] rounded-lg lg:p-2 text-[#23BE0A] work-sans text-sm"
                   key={idx}
                 >
                   # {tag}
@@ -57,7 +57,7 @@ const ReadBook = ({ book }) => {
     
 
         <hr  className="my-4"/>
-        <div className="work-sans w-9/12 flex justify-start gap-4 text-center">
+        <div className="work-sans lg:w-9/12 flex flex-col lg:flex-row justify-start gap-4 text-center">
             <p className="bg-[#328eff26] py-2 px-5 rounded-3xl text-[#328EFF] ">Category: {category}</p>
             <p className="bg-[#ffac3326] py-2 px-5 rounded-3xl text-[#FFAC33] ">Rating: {rating}</p>
             <button className="bg-[#23BE0A] btn text-white rounded-3xl text-lg font-medium"> View Details</button>
