@@ -1,4 +1,10 @@
-Site Link: https://book-blend.netlify.app
+# Book Blend
+
+Book Blend is a book review website where users can discover insightful book reviews, track their reading progress, and many more.
+
+## Live Site
+[Visit BookBlend](https://book-blend.netlify.app)
+
 
 <ul>
   <h3>Comprehensive Book Reviews: </h3>
