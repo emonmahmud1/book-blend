@@ -15,6 +15,7 @@ import WishListBooks from './components/WishLishBooks/WishListBooks';
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ErrorPage from './components/ErrorPage/ErrorPage';
+import AboutUs from './Pages/AboutUs/AboutUs';
 
 
 
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "/pagestoread",
         element: <PagesToRead></PagesToRead>
+      },
+      {
+        path: "/aboutus",
+        element: <AboutUs></AboutUs>
       },
       {
         path: "/bookdetails/:id",
