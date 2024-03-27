@@ -48,7 +48,7 @@ const NavBar = () => {
         className={({ isActive }) =>
         isActive
         ? " border border-[#23BE0A] text-[#23BE0A] px-5 py-3 rounded-lg font-semibold"
-        : " font-semibold "
+        : " font-semibold text-lg"
       }
         >About</NavLink>
       </li>
