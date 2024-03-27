@@ -16,6 +16,7 @@ import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import AboutUs from './Pages/AboutUs/AboutUs';
+import ContactUs from './Pages/ContactUs/ContactUs';
 
 
 
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: "/aboutus",
         element: <AboutUs></AboutUs>
+      },
+      {
+        path: "/contactus",
+        element: <ContactUs></ContactUs>
       },
       {
         path: "/bookdetails/:id",

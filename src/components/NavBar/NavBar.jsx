@@ -52,6 +52,15 @@ const NavBar = () => {
       }
         >About</NavLink>
       </li>
+      <li>
+        <NavLink to="/contactus" 
+        className={({ isActive }) =>
+        isActive
+        ? " border border-[#23BE0A] text-[#23BE0A] px-5 py-3 rounded-lg font-semibold"
+        : " font-semibold text-lg"
+      }
+        >Contact</NavLink>
+      </li>
 
       <li>
     <a className="btn bg-[#23BE0A] text-white text-sm p-1 font-semibold">Sign In</a>
@@ -103,6 +112,15 @@ const NavBar = () => {
         : " font-semibold "
       }
         >About</NavLink>
+      </li>
+      <li>
+        <NavLink to="/contactus" 
+        className={({ isActive }) =>
+        isActive
+        ? " border border-[#23BE0A] text-[#23BE0A] px-5 py-3 rounded-lg font-semibold"
+        : " font-semibold "
+      }
+        >Contact</NavLink>
       </li>
      
     </ul>
