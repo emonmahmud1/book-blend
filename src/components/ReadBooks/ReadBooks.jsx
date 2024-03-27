@@ -5,13 +5,9 @@ import { ReadBooksContext } from './../../Pages/ListedBook/ListedBook';
 
 
 const ReadBooks = () => {
-    // const readBooks = getReadBooksList();
-    // const readBooks = getReadBooksList();
 
     const readBook = useContext(ReadBooksContext)
 
-    
-    console.log("Books", readBook);
 
     if(readBook.length ==0){
         const name ="Read Books List"

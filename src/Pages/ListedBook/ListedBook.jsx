@@ -51,8 +51,7 @@ const ListedBook = () => {
     setWishListBooks(sortedWishBooks);
   };
 
-  // console.log("books",books);
-  // console.log(books);
+ 
 
   const [tabReadClick, setTabReadClick] = useState(true);
   const [tabWishClick, setTabWishClick] = useState(false);

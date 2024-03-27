@@ -38,7 +38,7 @@ const ContactUs = () => {
           </div>
 
           <div className="card-actions justify-center mt-5 ">
-            <button className="btn bg-[#50B1C9] playfair text-white w-1/2 rounded-full border-none text-lg" onClick={()=>document.getElementById('my_modal_5').showModal()}>Send Message</button>
+            <button className="btn bg-[#50B1C9] playfair text-white lg:w-1/2 w-full rounded-full border-none text-lg" onClick={()=>document.getElementById('my_modal_5').showModal()}>Send Message</button>
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@ const ContactUs = () => {
     <p className="py-4 work-sans">Thank you for reaching out to us! We will get back to you as soon as possible.</p>
     <div className="modal-action">
       <form method="dialog">
-        <button className="btn btn-accent text-white rounded-xl">Close</button>
+        <button className="btn btn-accent text-white rounded-xl ">Close</button>
       </form>
     </div>
   </div>

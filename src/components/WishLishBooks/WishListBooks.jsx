@@ -5,7 +5,6 @@ import { WishListContext } from "../../Pages/ListedBook/ListedBook";
 
 
 const WishListBooks = () => {
-//   const wishBooks = getWishBooksList();
 
         const wishBooks = useContext(WishListContext)
 

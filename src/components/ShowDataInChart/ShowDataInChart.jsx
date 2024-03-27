@@ -22,7 +22,7 @@ export default function ShowDataInChart() {
     return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
   };
   const readBooks = getReadBooksList();
-  console.log(readBooks);
+ 
   return (
     <BarChart
       width={1000}
